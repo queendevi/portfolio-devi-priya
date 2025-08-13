@@ -1,0 +1,62 @@
+    /* ======== Reset ======== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ======== Body ======== */
+        body {
+            background: linear-gradient(135deg, #ff6a00, #ffcb05, #1e3c72);
+            background-size: 300% 300%;
+            animation: aboutBgShift 12s ease infinite;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        @keyframes aboutBgShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ======== About Me Card ======== */
+        .about-container {
+            max-width: 900px;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transform: translateY(0);
+            transition: transform 0.4s ease;
+        }
+
+        .about-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-container h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffcb05;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        .about-container p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+        }
+
+        .about-container strong {
+            color: #fff;
+            text-shadow: 2px 2px 6px #000;
+        }

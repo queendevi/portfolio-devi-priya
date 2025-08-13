@@ -1,0 +1,74 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* ======== Background Animation ======== */
+        body {
+            background: linear-gradient(135deg, #ff6a00, #ffcb05, #1e3c72);
+            background-size: 300% 300%;
+            animation: bgShift 12s ease infinite;
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        @keyframes bgShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* ======== Page Title ======== */
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #ffcb05;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        /* ======== Experience Card ======== */
+        .experience-container {
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: transform 0.4s ease;
+        }
+
+        .experience-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .company-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffcb05;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 6px black;
+        }
+
+        .role {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        .experience-container ul {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        .experience-container li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: white;
+        }
