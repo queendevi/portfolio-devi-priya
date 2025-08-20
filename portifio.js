@@ -30,7 +30,7 @@ if (!clickedInsideMenu) closeMenu();
 
 // ====== TYPEWRITER EFFECT ======
 const typewriter = document.querySelector('.typewrite');
-const texts = ["I'm a Developer", "QA Enthusiast", "React Learner"]; // rotate a few roles
+const texts = ["I'm a Developer", "Software Developer", "Web DEVELOPER"]; // rotate a few roles
 let textIndex = 0; let charIndex = 0; let typing = true;
 
 
